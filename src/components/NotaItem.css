@@ -1,0 +1,62 @@
+.nota-item {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.nota-item h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.nota-item p {
+  margin: 0 0 15px 0;
+  color: #666;
+}
+
+.nota-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.nota-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nota-actions button:first-child {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.nota-actions button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.nota-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.nota-imagens img {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+
+.nota-imagens img:hover {
+  transform: scale(1.05);
+}
