@@ -12,11 +12,11 @@ function CadastroForm({ onCadastro, onShowLogin }) {
     setErro("");
     setMsg("");
     try {
-      const resp = await fetch("http://localhost:5000/api/cadastrar", {
+      const resp = await fetch("https://caderno-digital-web.onrender.com/api/cadastrar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, senha, nome }),
-      });
+      });;
       const data = await resp.json();
       if (resp.ok) {
         setMsg("Cadastro realizado! Faça login.");

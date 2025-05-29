@@ -1,0 +1,1 @@
+export const API_URL = "https://caderno-digital-web.onrender.com";

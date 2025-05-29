@@ -9,11 +9,11 @@ function LoginForm({ onLogin, onShowCadastro }) {
     e.preventDefault();
     setErro("");
     try {
-      const resp = await fetch("http://localhost:5000/api/login", {
+        const resp = await fetch("https://caderno-digital-web.onrender.com/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, senha }),
-      });
+        });
       const data = await resp.json();
       if (resp.ok) {
         onLogin(data.token, data.nome);
